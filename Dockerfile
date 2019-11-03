@@ -6,5 +6,5 @@ RUN wget http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat
 RUN cd /tmp && tar xvfz tomcat.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-8.5.47/* /usr/local/tomcat/
 COPY HelloServlet.war /usr/local/tomcat/webapp
-EXPOSE 8080
+EXPOSE 8000
 CMD /usr/local/tomcat/bin/catalina.sh run
